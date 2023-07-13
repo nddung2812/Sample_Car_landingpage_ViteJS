@@ -14,7 +14,7 @@ function App() {
 
   useLayoutEffect(() => {
     const allCards = Array.from(document.querySelectorAll('.card-ctn'));
-    allCards.forEach((card, index) => {
+    allCards.map((card, index) => {
       if (index === selectedCardIndex) {
         card.classList.add('border');
       } else {
@@ -48,7 +48,6 @@ function App() {
               <MediumButtons
                 buttonURL={buttonURL}
                 buttonText={buttonText}
-                onClick={() => console.log("test")}
               />
             </div>
           );
