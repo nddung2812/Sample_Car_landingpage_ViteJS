@@ -1,4 +1,4 @@
-import '../../styles/LargeButton.css'
+import '../../styles/Button.css'
 
 export const LargeButton = () => {
   return (

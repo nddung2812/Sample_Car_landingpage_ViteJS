@@ -1,0 +1,32 @@
+.lg-btn {
+  padding: 0.5rem 2.5rem;
+  background-color: rgb(33, 94, 198);
+  border-radius: 4rem;
+  z-index: 1;
+  margin-top: 2rem;
+}
+
+.lg-btn a {
+  text-decoration: none;
+  color: #f6f6f9;
+  font-weight: 600;
+  z-index: 1;
+  font-size: 1.2rem;
+}
+
+.md-btn {
+  width: 90%;
+}
+
+.md-btn a {
+  background-color: rgb(33, 94, 198);
+  border-radius: 3rem;
+  padding: 0.5rem 2.5rem;
+  text-decoration: none;
+  color: #f6f6f9;
+  font-weight: 600;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  font-size: 1.2rem;
+}/*# sourceMappingURL=Button.css.map */

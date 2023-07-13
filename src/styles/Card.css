@@ -1,8 +1,12 @@
 .card-ctn {
-  width: 18rem;
-  height: 20rem;
+  width: 20rem;
+  height: 100%;
+  min-height: 27rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
   box-shadow: 0px 4px 10px 1px #c4c4c4;
   margin: 0 1.5rem;
   border-radius: 1rem;
@@ -18,4 +22,22 @@
   -o-object-fit: contain;
      object-fit: contain;
   width: 100%;
+}
+
+.card-body {
+  padding: 0.5rem 1rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #030303;
+}
+
+.card-body h2 {
+  color: #030303;
+  padding: 0.5rem 0;
+}
+
+.card-body p {
+  margin-bottom: 0.5rem;
 }/*# sourceMappingURL=Card.css.map */

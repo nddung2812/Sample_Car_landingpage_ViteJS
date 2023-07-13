@@ -1,7 +1,10 @@
-import React from 'react'
+/* eslint-disable react/prop-types */
+import "../../styles/Button.css"
 
-export const MediumButtons = () => {
+export const MediumButtons = ({ buttonURL, buttonText }) => {
   return (
-    <div></div>
+    <div className="md-btn">
+      <a href={buttonURL}>{buttonText}</a>
+    </div>
   )
 }
