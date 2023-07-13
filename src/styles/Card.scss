@@ -3,7 +3,7 @@
 .card-ctn {
     width: 20rem;
     height: 100%;
-    min-height: 27rem;
+    min-height: 28rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -42,4 +42,18 @@
 
 .card-body p {
     margin-bottom: 0.5rem;
+}
+
+
+@media (max-width: 1250px) and (min-width: 769px) {
+    .card-ctn {
+        margin: 0rem 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-ctn {
+      width: 95%;
+      margin: 0.5rem 1rem;
+    }
 }

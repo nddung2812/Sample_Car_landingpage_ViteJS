@@ -36,4 +36,21 @@
   width: 45%;
   margin: 0.5rem 0;
   z-index: 1;
+}
+
+@media (max-width: 1250px) and (min-width: 769px) {
+  .header-ctn p {
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  .header-ctn {
+    padding: 3rem 0;
+  }
+  .header-ctn h1 {
+    font-size: 2rem;
+  }
+  .header-ctn p {
+    width: 80%;
+  }
 }/*# sourceMappingURL=Header.css.map */

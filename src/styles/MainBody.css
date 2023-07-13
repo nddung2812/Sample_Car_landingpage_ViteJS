@@ -12,4 +12,10 @@
   align-items: center;
   justify-content: center;
   overflow-y: hidden;
+}
+
+@media (max-width: 768px) {
+  .main-body-ctn {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=MainBody.css.map */
