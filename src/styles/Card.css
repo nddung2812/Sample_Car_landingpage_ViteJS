@@ -44,6 +44,8 @@
 
 .card-body p {
   margin-bottom: 0.5rem;
+  color: #030303;
+  font-weight: 300;
 }
 
 @media (max-width: 1250px) and (min-width: 769px) {

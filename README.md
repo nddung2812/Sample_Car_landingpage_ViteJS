@@ -17,4 +17,4 @@
 6. pnpm run dev to start at local port 5173
 
 # Deployed link on Vercel 
-[This is an external link](https://sample-car-landingpage-vite-js.vercel.app/)
+[Link to deployed app on Vercel](https://sample-car-landingpage-vite-js.vercel.app/)
