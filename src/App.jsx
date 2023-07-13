@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useLayoutEffect, useState } from "react"
 import './styles/MainBody.css'
 import { Header } from './components/Header'
 import cardData from './Data/card'
@@ -8,11 +8,20 @@ import { MediumButtons } from './components/Button/MediumButtons'
 
 function App() {
   const [selectedCardIndex, setSelectedCardIndex] = useState(1);
-
   const handleClick = (event, index) => {
     setSelectedCardIndex(index);
-    event.currentTarget.classList.add('border');
   };
+
+  useLayoutEffect(() => {
+    const allCards = Array.from(document.querySelectorAll('.card-ctn'));
+    allCards.forEach((card, index) => {
+      if (index === selectedCardIndex) {
+        card.classList.add('border');
+      } else {
+        card.classList.remove('border');
+      }
+    });
+  }, [selectedCardIndex]);
 
   return (
     <>
@@ -39,6 +48,7 @@ function App() {
               <MediumButtons
                 buttonURL={buttonURL}
                 buttonText={buttonText}
+                onClick={() => console.log("test")}
               />
             </div>
           );
@@ -48,5 +58,4 @@ function App() {
   );
 }
 
-
-export default App
+export default App;
