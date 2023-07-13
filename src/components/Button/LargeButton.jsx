@@ -3,7 +3,7 @@ import '../../styles/Button.css'
 export const LargeButton = () => {
   return (
     <div className='lg-btn'>
-      <a href="https://www.dealerstudio.com.au/contact">Contact Us</a>
+      <a target="_blank" href="https://www.dealerstudio.com.au/contact" rel="noreferrer">Contact Us</a>
     </div>
   )
 }
