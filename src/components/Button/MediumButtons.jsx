@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
 import "../../styles/Button.css"
 
-export const MediumButtons = ({ buttonURL, buttonText }) => {
+export const MediumButtons = ({  buttonText }) => {
   return (
     <div className="md-btn">
-      <a href={buttonURL}>{buttonText}</a>
+      <a>{buttonText}</a>
     </div>
   )
 }

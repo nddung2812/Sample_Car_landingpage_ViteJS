@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react"
 import './styles/MainBody.css'
 import { Header } from './components/Header'
 import cardData from './Data/card'
@@ -6,33 +7,46 @@ import { CardBody } from './components/Card/CardBody'
 import { MediumButtons } from './components/Button/MediumButtons'
 
 function App() {
+  const [selectedCardIndex, setSelectedCardIndex] = useState(1);
+
+  const handleClick = (event, index) => {
+    setSelectedCardIndex(index);
+    event.currentTarget.classList.add('border');
+  };
+
   return (
     <>
       <Header />
       <div className="main-body-ctn">
         {cardData?.map((card, index) => {
-          const {heading, text1, text2, buttonURL, buttonText} = card;
+          const { heading, text1, text2, buttonURL, buttonText } = card;
+          const isSelected = index === selectedCardIndex;
+
           return (
-            <div key={index} className='card-ctn'>
+            <div
+              key={index}
+              className={`card-ctn ${isSelected ? 'border' : ''}`}
+              onClick={(event) => handleClick(event, index)}
+            >
               <div className="top-card">
                 <CardHeader />
-                <CardBody 
+                <CardBody
                   heading={heading}
                   text1={text1}
                   text2={text2}
-                  />
-       
+                />
               </div>
-              <MediumButtons 
+              <MediumButtons
                 buttonURL={buttonURL}
                 buttonText={buttonText}
               />
             </div>
-          )
+          );
         })}
       </div>
     </>
-  )
+  );
 }
+
 
 export default App

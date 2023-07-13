@@ -4,6 +4,7 @@
   border-radius: 4rem;
   z-index: 1;
   margin-top: 2rem;
+  transition: 800ms;
 }
 
 .lg-btn a {
@@ -16,6 +17,7 @@
 
 .md-btn {
   width: 90%;
+  cursor: pointer;
 }
 
 .md-btn a {
@@ -29,4 +31,14 @@
   place-items: center;
   align-content: center;
   font-size: 1.2rem;
+}
+
+.md-btn a:hover, .lg-btn a:hover {
+  color: #030303;
+  transition: 400ms;
+}
+
+.lg-btn:hover {
+  padding: 0.5rem 3rem;
+  transition: 800ms;
 }/*# sourceMappingURL=Button.css.map */
