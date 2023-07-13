@@ -1,0 +1,13 @@
+.lg-btn {
+  padding: 0.5rem 2.5rem;
+  background-color: rgb(33, 94, 198);
+  border-radius: 4rem;
+  z-index: 1;
+}
+
+.lg-btn a {
+  text-decoration: none;
+  color: #f6f6f9;
+  font-weight: 600;
+  z-index: 1;
+}/*# sourceMappingURL=LargeButton.css.map */
