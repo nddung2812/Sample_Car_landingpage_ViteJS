@@ -30,12 +30,14 @@
   font-size: 3rem;
   margin: 1rem 0;
   z-index: 1;
+  color: #f6f6f9;
 }
 
 .header-ctn p {
   width: 45%;
   margin: 0.5rem 0;
   z-index: 1;
+  color: #f6f6f9;
 }
 
 @media (max-width: 1250px) and (min-width: 769px) {
