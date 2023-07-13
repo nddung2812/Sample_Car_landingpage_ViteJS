@@ -1,0 +1,15 @@
+#root, * {
+  padding: 0;
+  margin: 0;
+}
+
+.main-body-ctn {
+  background-color: #f1f1f1;
+  height: 100%;
+  width: 100%;
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: hidden;
+}/*# sourceMappingURL=MainBody.css.map */

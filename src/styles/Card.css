@@ -1,0 +1,21 @@
+.card-ctn {
+  width: 18rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 4px 10px 1px #c4c4c4;
+  margin: 0 1.5rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.card-header {
+  height: 35%;
+  width: 100%;
+}
+
+.card-header img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+}/*# sourceMappingURL=Card.css.map */

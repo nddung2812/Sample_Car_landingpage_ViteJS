@@ -1,8 +1,10 @@
+@import '../variables/Variables.scss';
 .lg-btn {
     padding: 0.5rem 2.5rem;
-    background-color: rgb(33, 94, 198);
+    background-color: $blueBgColor;
     border-radius: 4rem;
     z-index: 1;
+    margin-top: 2rem;
 }
 
 .lg-btn a {
